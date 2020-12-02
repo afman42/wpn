@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Data Petugas - Admin</title>
+    <title>List Pengaduan - Petugas</title>
 
     <!-- Fontfaces CSS-->
     <link href="../css/font-face.css" rel="stylesheet" media="all">
@@ -58,31 +58,11 @@
                     <ul class="navbar-mobile__list list-unstyled">
                         <li>
                             <a href="index.html">
-                                <i class="fas fa-tachometer-alt"></i>Char</a>
+                                <i class="fas fa-tachometer-alt"></i>List Pengaduan</a>
                         </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-users"></i>Akun</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <li>
-                                    <a href="data-petugas.html">Data Petugas</a>
-                                </li>
-                                <li>
-                                    <a href="data-masyarakat.html">Data Masyarakat</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-bookmark"></i>List</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <li>
-                                    <a href="kategori.html">Kategori</a>
-                                </li>
-                                <li>
-                                    <a href="data-pengaduan.html">Data Pengaduan</a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="data-pengaduan.html">
+                                <i class="fas fa-bookmark"></i>Data Pengaduan</a>
                         </li>
                         <li>
                             <a href="ubah-profil.html">
@@ -108,33 +88,13 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li>
+                        <li class="active">
                             <a href="index.html">
-                                <i class="fas fa-tachometer-alt"></i>Beranda</a>
+                                <i class="fas fa-tachometer-alt"></i>List Pengaduan</a>
                         </li>
-                        <li class="active has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-users"></i>Akun</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="data-petugas.html">Data Petugas</a>
-                                </li>
-                                <li>
-                                    <a href="data-masyarakat.html">Data Masyarakat</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-bookmark"></i>List</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="kategori.html">Kategori</a>
-                                </li>
-                                <li>
-                                    <a href="data-pengaduan.html">Data Pengaduan</a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="data-pengaduan.html">
+                                <i class="fas fa-bookmark"></i>Data Pengaduan</a>
                         </li>
                         <li>
                             <a href="ubah-profil.html">
@@ -158,7 +118,7 @@
                     <div class="container-fluid">
                         <div class="header-wrap">
                             <form class="form-header" action="" method="POST">
-                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Pencarian" />
+                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
                                 <button class="au-btn--submit" type="submit">
                                     <i class="zmdi zmdi-search"></i>
                                 </button>
@@ -167,7 +127,7 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="../images/icon/avatar-01.jpg" alt="John Doe" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="#">john doe</a>
@@ -176,7 +136,7 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                                        <img src="../images/icon/avatar-01.jpg" alt="John Doe" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
@@ -207,9 +167,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Data Petugas</h2>
-                                    <button class="au-btn au-btn-icon au-btn--blue">
-                                        <i class="zmdi zmdi-plus"></i>Tambah</button>
+                                    <h2 class="title-1">List Pengaduan</h2>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -221,19 +180,26 @@
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>Nama</th>
-                                                <th>Telp.</th>
-                                                <th>Posisi</th>
-                                                <th>Aksi</th>
+                                                <th>Kebijakan</th>
+                                                <th>Isi</th>
+                                                <th>Tanggal</th>
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>Gunawan Budi Saputra</td>
-                                                <td>081234567890</td>
-                                                <td>Petugas</td>
-                                                <td><button class="btn btn-sm btn-primary">Edit</button> <button class="btn btn-sm btn-danger">Hapus</button></td>
+                                                <td>Pengecoran Jalan</td>
+                                                <td>Jalan Rusak</td>
+                                                <td>12 Desember 2020</td>
+                                                <td><button class="btn btn-sm btn-success">Tanggapi</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Tiang Lampu Rusak</td>
+                                                <td>Mati Lampu</td>
+                                                <td>15 Desember 2020</td>
+                                                <td>selesai</td>
                                             </tr>
                                         </tbody>
                                     </table>
